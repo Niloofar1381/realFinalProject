@@ -9,6 +9,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class Block {
     //block
+    //blocker
     User blocker;
     User blocked;
 }
