@@ -8,6 +8,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 public class Block {
+    //pain
     User blocker;
     User blocked;
 }
