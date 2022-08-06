@@ -24,7 +24,6 @@ public class Message {
     private boolean seen = false;
     private String time;
     private String emojiAddress;
-
     public Message(User sender, String text, User receiver, int id, boolean forwarded, LocalDate localDate,boolean seen,String time,String emojiAddress) {
         this.sender = sender;
         this.text = text;

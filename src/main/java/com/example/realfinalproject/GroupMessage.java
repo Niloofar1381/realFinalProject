@@ -20,10 +20,10 @@ public class GroupMessage {
     String groupId;
     @NonNull
     LocalDate localDate;
+    ArrayList<Boolean> seen=new ArrayList<>();
     String time;
     String emojiAddress;
     String localDateToString;
-    ArrayList<Boolean> seen=new ArrayList<>();
     public GroupMessage(User sender, String text, String id, String groupId, LocalDate localDate, ArrayList<Boolean> seen, String time, String emojiAddress) {
         this.sender = sender;
         this.text = text;

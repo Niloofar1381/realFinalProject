@@ -32,7 +32,6 @@ public class BusinessPost  extends Post{
         this.viewLocalDatesForTable=viewLocalDatesForTable;
         this.releasedTime = releasedTime;
     }
-
     public BusinessPost(String userId, String id) {
         super(userId, id);
     }

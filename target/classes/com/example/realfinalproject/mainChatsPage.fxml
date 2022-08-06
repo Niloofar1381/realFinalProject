@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane fx:id="scrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="com.example.realfinalproject.MainChatsPageController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="501.0" prefWidth="621.0">
+         <children>
+            <ImageView fx:id="bg" fitHeight="410.0" fitWidth="609.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="privateMessage" layoutX="397.0" layoutY="19.0" mnemonicParsing="false" onAction="#switchToPrivateMessagePage" prefHeight="17.0" prefWidth="102.0" text="private message" />
+            <Button fx:id="privateMessage1" layoutX="397.0" layoutY="19.0" mnemonicParsing="false" onAction="#switchToPrivateMessagePage" prefHeight="17.0" prefWidth="102.0" text="private message" />
+            <Button fx:id="groups" layoutX="160.0" layoutY="19.0" mnemonicParsing="false" onAction="#switchToGroupsPage" text="groups" />
+            <Line fx:id="line1" endX="300.0" layoutX="312.0" layoutY="71.0" startX="-309.0" stroke="#f50f0f" />
+            <Label fx:id="label" layoutX="256.0" layoutY="44.0" text="recent messages" textFill="#ff9019">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="image1" fitHeight="43.0" fitWidth="44.0" layoutX="35.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="id1" layoutX="30.0" layoutY="124.0" prefHeight="17.0" prefWidth="54.0" textFill="#ff9019" />
+            <Text fx:id="text1" fill="#ff9019" layoutX="115.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="414.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Label fx:id="seen1" layoutX="565.0" layoutY="75.0" prefHeight="17.0" prefWidth="27.0" textFill="#ff9019" />
+            <Button fx:id="goToChat1" layoutX="539.0" layoutY="103.0" mnemonicParsing="false" onAction="#setGoToChat1" text="go to chat" />
+            <Line fx:id="line2" endX="300.0" layoutX="316.0" layoutY="149.0" startX="-309.0" stroke="#f50f0f" />
+            <ImageView fx:id="image2" fitHeight="43.0" fitWidth="44.0" layoutX="40.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="id2" layoutX="35.0" layoutY="200.0" prefHeight="17.0" prefWidth="54.0" textFill="#ff9019" />
+            <Text fx:id="text2" fill="#ff9019" layoutX="120.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="414.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Label fx:id="seen2" layoutX="561.0" layoutY="153.0" prefHeight="17.0" prefWidth="27.0" textFill="#ff9019" />
+            <Button fx:id="goToChat2" layoutX="539.0" layoutY="181.0" mnemonicParsing="false" onAction="#setGoToChat2" text="go to chat" />
+            <Line fx:id="line3" endX="300.0" layoutX="312.0" layoutY="227.0" startX="-309.0" stroke="#f50f0f" />
+            <ImageView fx:id="image3" fitHeight="43.0" fitWidth="44.0" layoutX="40.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="id3" layoutX="35.0" layoutY="278.0" prefHeight="17.0" prefWidth="54.0" textFill="#ff9019" />
+            <Text fx:id="text3" fill="#ff9019" layoutX="120.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="414.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Label fx:id="seen4" layoutX="565.0" layoutY="322.0" prefHeight="17.0" prefWidth="27.0" textFill="#ff9019" />
+            <Button fx:id="goToChat3" layoutX="539.0" layoutY="259.0" mnemonicParsing="false" onAction="#setGoToChat3" text="go to chat" />
+            <Line fx:id="line4" endX="300.0" layoutX="316.0" layoutY="310.0" startX="-309.0" stroke="#f50f0f" />
+            <ImageView fx:id="image4" fitHeight="43.0" fitWidth="44.0" layoutX="30.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="id4" layoutX="25.0" layoutY="369.0" prefHeight="17.0" prefWidth="54.0" textFill="#ff9019" />
+            <Text fx:id="text4" fill="#ff9019" layoutX="110.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="414.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Button fx:id="goToChat4" layoutX="539.0" layoutY="350.0" mnemonicParsing="false" onAction="#setGoToChat4" text="go to chat" />
+            <Label fx:id="seen3" layoutX="565.0" layoutY="231.0" prefHeight="17.0" prefWidth="27.0" textFill="#ff9019" />
+            <Button fx:id="back" layoutX="26.0" layoutY="13.0" mnemonicParsing="false" onAction="#switchToMainPage" text="back" />
+            <Label fx:id="seen5" layoutX="565.0" layoutY="413.0" prefHeight="17.0" prefWidth="27.0" textFill="#ff9019" />
+            <ImageView fx:id="image5" fitHeight="43.0" fitWidth="44.0" layoutX="30.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="id5" layoutX="25.0" layoutY="460.0" prefHeight="17.0" prefWidth="54.0" textFill="#ff9019" />
+            <Text fx:id="text5" fill="#ff9019" layoutX="110.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="414.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Button fx:id="goToChat5" layoutX="539.0" layoutY="441.0" mnemonicParsing="false" onAction="#setGoToChat5" text="go to chat" />
+            <Line fx:id="line5" endX="538.0" endY="27.0" layoutX="89.0" layoutY="386.0" startX="-96.0" startY="27.0" stroke="#f50f0f" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

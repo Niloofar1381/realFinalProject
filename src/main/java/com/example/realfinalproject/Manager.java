@@ -1,11 +1,10 @@
 package com.example.realfinalproject;
-import lombok.NoArgsConstructor;
-
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Scanner;
+
 public class Manager {
     public static ArrayList<User> users=new ArrayList<>(0);
     public static ArrayList<BusinessUser>businessUsers=new ArrayList<>(0);
@@ -1298,6 +1297,7 @@ public class Manager {
     }
     public ArrayList<User> suggestFriend()
     {
+        ArrayList<User>suggestUsers=new ArrayList<>();
         User user=checkLogin();
         setFriends();
         ArrayList<User> userNewFriends=new ArrayList<>();
@@ -1330,16 +1330,18 @@ public class Manager {
             }
             gradeForNotFriends.add(num);
         }
-        int max1=gradeForNotFriends.get(0);
-        int k1=0;
-        for (int i = 0; i < gradeForNotFriends.size(); i++) {
-            if(gradeForNotFriends.get(i)>max1)
-            {
-                max1=gradeForNotFriends.get(i);
-                k1=i;
+        if(gradeForNotFriends.size()>=1) {
+            int max1 = gradeForNotFriends.get(0);
+            int k1 = 0;
+            for (int i = 0; i < gradeForNotFriends.size(); i++) {
+                if (gradeForNotFriends.get(i) > max1) {
+                    max1 = gradeForNotFriends.get(i);
+                    k1 = i;
+                }
             }
+            suggestUsers.add(notFriendsWithOurFriends.get(k1));
+            System.out.println("Recommended friend for you\n" + notFriendsWithOurFriends.get(k1).getId());
         }
-        System.out.println("Recommended friend for you\n"+notFriendsWithOurFriends.get(k1).getId());
         ArrayList<Integer>commonFriendsAndLikePosts=new ArrayList<>();
         for (int i = 0; i < userNewFriends.size(); i++) {
             int num=0;
@@ -1357,19 +1359,18 @@ public class Manager {
             }
             commonFriendsAndLikePosts.add(num);
         }
-        int max2=commonFriendsAndLikePosts.get(0);
-        int k2=0;
-        for (int i = 0; i < commonFriendsAndLikePosts.size(); i++) {
-            if(commonFriendsAndLikePosts.get(i)>max2)
-            {
-                max2=commonFriendsAndLikePosts.get(i);
-                k2=i;
+        if(commonFriendsAndLikePosts.size()!=0) {
+            int max2 = commonFriendsAndLikePosts.get(0);
+            int k2 = 0;
+            for (int i = 0; i < commonFriendsAndLikePosts.size(); i++) {
+                if (commonFriendsAndLikePosts.get(i) > max2) {
+                    max2 = commonFriendsAndLikePosts.get(i);
+                    k2 = i;
+                }
             }
+            System.out.println("Recommended friend for you\n" + userNewFriends.get(k2).getId());
+            suggestUsers.add(userNewFriends.get(k2));
         }
-        System.out.println("Recommended friend for you\n"+userNewFriends.get(k2).getId());
-        ArrayList<User>suggestUsers=new ArrayList<>();
-        suggestUsers.add(notFriendsWithOurFriends.get(k1));
-        suggestUsers.add(userNewFriends.get(k2));
         return suggestUsers;
     }
     public void setFavoriteNumber()
@@ -1446,5 +1447,4 @@ public class Manager {
         checkLogin().setEntered(false);
         System.out.println("logged out successfully");
     }
-    //user function
 }

@@ -1,29 +1,18 @@
 package com.example.realfinalproject;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.ArrayList;
 @Getter
 @Setter
+@AllArgsConstructor
+@RequiredArgsConstructor
 public class Post {
+    @NonNull
     String userId;
+    @NonNull
     String Id;
     String text="";
     ArrayList<String> likeUsersId = new ArrayList<>();
     ArrayList<String> commentsId = new ArrayList<>();
     String image="";
-
-    public Post(String id, String userId , String text, ArrayList<String> likeUsersId, ArrayList<String> commentsId, String image) {
-
-        Id = id;
-        this.userId = userId;
-        this.text = text;
-        this.likeUsersId = likeUsersId;
-        this.commentsId = commentsId;
-        this.image = image;
-    }
-    public Post(String userId, String id) {
-        this.userId = userId;
-        this.Id= id;
-    }
 }

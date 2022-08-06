@@ -1,40 +1,28 @@
 package com.example.realfinalproject;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.ArrayList;
 @Getter
 @Setter
+@AllArgsConstructor
+@RequiredArgsConstructor
 public class User {
+    @NonNull
     private String id;
+    @NonNull
     private String password;
     private boolean entered=false;
+    @NonNull
     private String nationalCode;
+    @NonNull
     private String businessAccount;
-    private String imageAddress;
-    private String backGround;
-
     ArrayList<String>followerIds=new ArrayList<>();
     ArrayList<String>followingIds=new ArrayList<>();
     ArrayList<String>postIds=new ArrayList<>();
     ArrayList<Integer> messageIds=new ArrayList<>();
     ArrayList<String> allFriendIds=new ArrayList<>();
-
-    public User(String id, String password, boolean entered, String nationalCode, String businessAccount, ArrayList<String> postIds ,ArrayList<String> followerIds, ArrayList<String> followingIds, ArrayList<Integer> messageIds, ArrayList<String> allFriendIds, String imageAddress, String backGround) {
-        this.id = id;
-        this.password = password;
-        this.entered = entered;
-        this.nationalCode = nationalCode;
-        this.businessAccount = businessAccount;
-        this.postIds = postIds;
-        this.followerIds = followerIds;
-        this.followingIds = followingIds;
-        this.messageIds = messageIds;
-        this.allFriendIds = allFriendIds;
-        this.imageAddress = imageAddress;
-        this.backGround = backGround;
-    }
+    private String imageAddress;
+    private String backGround;
 
     public void printUserPosts(){
         int n= postIds.size();
@@ -129,12 +117,5 @@ public class User {
             }
         }
         return -1;
-    }
-
-    public User(String id, String password, String nationalCode, String businessAccount) {
-        this.id = id;
-        this.password = password;
-        this.nationalCode = nationalCode;
-        this.businessAccount=businessAccount;
     }
 }
