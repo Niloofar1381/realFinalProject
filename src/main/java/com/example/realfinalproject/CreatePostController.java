@@ -56,7 +56,7 @@ public class CreatePostController {
     public void setPostImage() throws FileNotFoundException, SQLException {
         SetArrayLists setArrayLists = new SetArrayLists();
         setArrayLists.setAllArrayLists();
-        imageAddress.append("C:\\Users\\APPLE\\Desktop\\posts\\");
+        imageAddress.append("C:\\Users\\ernika\\Desktop\\posts\\");
         imageAddress.append(postImage.getText());
         imageAddress.append(".jpg");
         InputStream stream = new FileInputStream(imageAddress.toString());

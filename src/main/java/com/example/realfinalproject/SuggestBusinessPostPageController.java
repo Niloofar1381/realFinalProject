@@ -61,11 +61,11 @@ public class SuggestBusinessPostPageController {
             Image image1 = new Image(stream);
             image.setImage(image1);
             text.setText(businessPost.getText());
-            ImageView imageView1 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\likeLogo.png");
+            ImageView imageView1 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\likeLogo.png");
             imageView1.setFitHeight(25);
             imageView1.setFitWidth(30);
             like.setGraphic(imageView1);
-            ImageView imageView2 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\commentLogo.png");
+            ImageView imageView2 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\commentLogo.png");
             imageView2.setFitHeight(25);
             imageView2.setFitWidth(30);
             comment.setGraphic(imageView2);

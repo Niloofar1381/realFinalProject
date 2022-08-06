@@ -91,19 +91,19 @@ public class GroupSettingController {
             Image image = new Image(stream);
             bg.setImage(image);
         }
-        InputStream stream1 = new FileInputStream("C:\\Users\\APPLE\\Desktop\\groupPhotos\\photo1.jpg");
+        InputStream stream1 = new FileInputStream("C:\\Users\\ernika\\Desktop\\groupPhotos\\photo1.jpg");
         Image img1 = new Image(stream1);
         profile1Image.setImage(img1);
 
-        InputStream stream2 = new FileInputStream("C:\\Users\\APPLE\\Desktop\\groupPhotos\\photo2.jpg");
+        InputStream stream2 = new FileInputStream("C:\\Users\\ernika\\Desktop\\groupPhotos\\photo2.jpg");
         Image img2= new Image(stream2);
         profile2Image.setImage(img2);
 
-        InputStream stream3 = new FileInputStream("C:\\Users\\APPLE\\Desktop\\groupPhotos\\photo3.jpg");
+        InputStream stream3 = new FileInputStream("C:\\Users\\ernika\\Desktop\\groupPhotos\\photo3.jpg");
         Image img3 = new Image(stream3);
         profile3Image.setImage(img3);
 
-        InputStream stream4 = new FileInputStream("C:\\Users\\APPLE\\Desktop\\groupPhotos\\photo4.jpg");
+        InputStream stream4 = new FileInputStream("C:\\Users\\ernika\\Desktop\\groupPhotos\\photo4.jpg");
         Image img4 = new Image(stream4);
         profile4Image.setImage(img4);
     }
@@ -166,16 +166,16 @@ public class GroupSettingController {
     public void setChangeImage(){
         Group group = GroupPageController.group;
         if (setProfile1Image.isSelected()){
-            group.setImage("C:\\Users\\APPLE\\Desktop\\groupPhotos\\photo1.jpg");
+            group.setImage("C:\\Users\\ernika\\Desktop\\groupPhotos\\photo1.jpg");
         }
         if (setProfile2Image.isSelected()){
-            group.setImage("C:\\Users\\APPLE\\Desktop\\groupPhotos\\photo2.jpg");
+            group.setImage("C:\\Users\\ernika\\Desktop\\groupPhotos\\photo2.jpg");
         }
         if (setProfile3Image.isSelected()){
-            group.setImage("C:\\Users\\APPLE\\Desktop\\groupPhotos\\photo3.jpg");
+            group.setImage("C:\\Users\\ernika\\Desktop\\groupPhotos\\photo3.jpg");
         }
         if (setProfile4Image.isSelected()){
-            group.setImage("C:\\Users\\APPLE\\Desktop\\groupPhotos\\photo4.jpg");
+            group.setImage("C:\\Users\\ernika\\Desktop\\groupPhotos\\photo4.jpg");
         }
     }
     public void leaveGroup() throws SQLException {

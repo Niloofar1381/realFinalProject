@@ -52,16 +52,16 @@ public class SetImagePageController {
     {
         SetArrayLists setArrayLists = new SetArrayLists();
         setArrayLists.setAllArrayLists();
-        InputStream stream1 = new FileInputStream("C:\\Users\\APPLE\\Desktop\\images\\ali.jpg");
+        InputStream stream1 = new FileInputStream("C:\\Users\\ernika\\Desktop\\images\\ali.jpg");
         Image Image1 = new Image(stream1);
         image1.setImage(Image1);
-        InputStream stream2 = new FileInputStream("C:\\Users\\APPLE\\Desktop\\images\\mina.jpg");
+        InputStream stream2 = new FileInputStream("C:\\Users\\ernika\\Desktop\\images\\mina.jpg");
         Image Image2 = new Image(stream2);
         image2.setImage(Image2);
-        InputStream stream3 = new FileInputStream("C:\\Users\\APPLE\\Desktop\\images\\neda.jpg");
+        InputStream stream3 = new FileInputStream("C:\\Users\\ernika\\Desktop\\images\\neda.jpg");
         Image Image3 = new Image(stream3);
         image3.setImage(Image3);
-        InputStream stream4 = new FileInputStream("C:\\Users\\APPLE\\Desktop\\images\\reza.jpg");
+        InputStream stream4 = new FileInputStream("C:\\Users\\ernika\\Desktop\\images\\reza.jpg");
         Image Image4= new Image(stream4);
         image4.setImage(Image4);
     }
@@ -70,19 +70,19 @@ public class SetImagePageController {
         SetArrayLists setArrayLists = new SetArrayLists();
         setArrayLists.setAllArrayLists();
         if (checkBox1.isSelected()) {
-            str = "C:\\Users\\APPLE\\Desktop\\images\\ali.jpg";
+            str = "C:\\Users\\ernika\\Desktop\\images\\ali.jpg";
             manager.checkLogin().setImageAddress(str);
         }
         if (checkBox2.isSelected()) {
-            str ="C:\\Users\\APPLE\\Desktop\\images\\mina.jpg";
+            str ="C:\\Users\\ernika\\Desktop\\images\\mina.jpg";
             manager.checkLogin().setImageAddress(str);
         }
         if (checkBox3.isSelected()) {
-            str = "C:\\Users\\APPLE\\Desktop\\images\\neda.jpg";
+            str = "C:\\Users\\ernika\\Desktop\\images\\neda.jpg";
             manager.checkLogin().setImageAddress(str);
         }
         if (checkBox4.isSelected()) {
-            str = "C:\\Users\\APPLE\\Desktop\\images\\reza.jpg";
+            str = "C:\\Users\\ernika\\Desktop\\images\\reza.jpg";
             manager.checkLogin().setImageAddress(str);
         }
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("mainPage.fxml")));

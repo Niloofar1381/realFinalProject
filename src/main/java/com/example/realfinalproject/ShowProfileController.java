@@ -102,7 +102,7 @@ public class ShowProfileController {
                 Image image1 = new Image(stream1);
                 postImage1.setImage(image1);
                 postText1.setText(manager.searchPostById(user.postIds.get(user.postIds.size() - 1)).getText());
-                ImageView imageView1 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\likeLogo.png");
+                ImageView imageView1 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\likeLogo.png");
                 imageView1.setFitHeight(25);
                 imageView1.setFitWidth(30);
                 like1.setGraphic(imageView1);
@@ -113,7 +113,7 @@ public class ShowProfileController {
                 Image image2 = new Image(stream2);
                 postImage2.setImage(image2);
                 postText2.setText(manager.searchPostById(user.postIds.get(user.postIds.size() - 2)).getText());
-                ImageView imageView1 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\likeLogo.png");
+                ImageView imageView1 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\likeLogo.png");
                 imageView1.setFitHeight(25);
                 imageView1.setFitWidth(30);
                 like2.setGraphic(imageView1);

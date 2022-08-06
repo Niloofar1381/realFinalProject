@@ -157,19 +157,19 @@ public class CreateGroupController {
                 follower7.setText(manager.checkLogin().getFollowerIds().get(6));
             }
         }
-        InputStream stream1 = new FileInputStream("C:\\Users\\APPLE\\Desktop\\groupPhotos\\photo1.jpg");
+        InputStream stream1 = new FileInputStream("C:\\Users\\ernika\\Desktop\\groupPhotos\\photo1.jpg");
         Image img1 = new Image(stream1);
         image1.setImage(img1);
 
-        InputStream stream2 = new FileInputStream("C:\\Users\\APPLE\\Desktop\\groupPhotos\\photo2.jpg");
+        InputStream stream2 = new FileInputStream("C:\\Users\\ernika\\Desktop\\groupPhotos\\photo2.jpg");
         Image img2= new Image(stream2);
         image2.setImage(img2);
 
-        InputStream stream3 = new FileInputStream("C:\\Users\\APPLE\\Desktop\\groupPhotos\\photo3.jpg");
+        InputStream stream3 = new FileInputStream("C:\\Users\\ernika\\Desktop\\groupPhotos\\photo3.jpg");
         Image img3 = new Image(stream3);
         image3.setImage(img3);
 
-        InputStream stream4 = new FileInputStream("C:\\Users\\APPLE\\Desktop\\groupPhotos\\photo4.jpg");
+        InputStream stream4 = new FileInputStream("C:\\Users\\ernika\\Desktop\\groupPhotos\\photo4.jpg");
         Image img4 = new Image(stream4);
         image4.setImage(img4);
     }
@@ -185,25 +185,25 @@ public class CreateGroupController {
             group=manager.searchGroup(fillId.getText());
             String imageAddress = "";
             if (profile1.isSelected()) {
-                imageAddress = "C:\\Users\\APPLE\\Desktop\\groupPhotos\\photo1.jpg";
+                imageAddress = "C:\\Users\\ernika\\Desktop\\groupPhotos\\photo1.jpg";
                 InputStream stream = new FileInputStream(imageAddress);
                 Image image = new Image(stream);
                 image1.setImage(image);
             }
             if (profile2.isSelected()) {
-                imageAddress = "C:\\Users\\APPLE\\Desktop\\groupPhotos\\photo2.jpg";
+                imageAddress = "C:\\Users\\ernika\\Desktop\\groupPhotos\\photo2.jpg";
                 InputStream stream = new FileInputStream(imageAddress);
                 Image image = new Image(stream);
                 image2.setImage(image);
             }
             if (profile3.isSelected()) {
-                imageAddress = "C:\\Users\\APPLE\\Desktop\\groupPhotos\\photo3.jpg";
+                imageAddress = "C:\\Users\\ernika\\Desktop\\groupPhotos\\photo3.jpg";
                 InputStream stream = new FileInputStream(imageAddress);
                 Image image = new Image(stream);
                 image3.setImage(image);
             }
             if (profile4.isSelected()) {
-                imageAddress = "C:\\Users\\APPLE\\Desktop\\groupPhotos\\photo4.jpg";
+                imageAddress = "C:\\Users\\ernika\\Desktop\\groupPhotos\\photo4.jpg";
                 InputStream stream = new FileInputStream(imageAddress);
                 Image image = new Image(stream);
                 image4.setImage(image);

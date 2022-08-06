@@ -112,12 +112,12 @@ public class PreviousPostsController {
                 Image image = new Image(stream);
                 post1Image.setImage(image);
             }
-            ImageView imageView1 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\likeLogo.png");
+            ImageView imageView1 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\likeLogo.png");
             imageView1.setFitHeight(25);
             imageView1.setFitWidth(30);
             like1.setGraphic(imageView1);
             like1.setVisible(true);
-            ImageView imageView2 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\commentLogo.png");
+            ImageView imageView2 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\commentLogo.png");
             imageView2.setFitHeight(25);
             imageView2.setFitWidth(30);
             comment1.setGraphic(imageView2);
@@ -138,12 +138,12 @@ public class PreviousPostsController {
                 Image image = new Image(stream);
                 post2Image.setImage(image);
             }
-            ImageView imageView1= new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\likeLogo.png");
+            ImageView imageView1= new ImageView("C:\\Users\\ernika\\Desktop\\posts\\likeLogo.png");
             imageView1.setFitHeight(25);
             imageView1.setFitWidth(30);
             like2.setGraphic(imageView1);
             like2.setVisible(true);
-            ImageView imageView2 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\commentLogo.png");
+            ImageView imageView2 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\commentLogo.png");
             imageView2.setFitHeight(25);
             imageView2.setFitWidth(30);
             comment2.setGraphic(imageView2);
@@ -164,12 +164,12 @@ public class PreviousPostsController {
                 Image image = new Image(stream);
                 post3Image.setImage(image);
             }
-            ImageView imageView1 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\likeLogo.png");
+            ImageView imageView1 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\likeLogo.png");
             imageView1.setFitHeight(25);
             imageView1.setFitWidth(30);
             like3.setGraphic(imageView1);
             like3.setVisible(true);
-            ImageView imageView2 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\commentLogo.png");
+            ImageView imageView2 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\commentLogo.png");
             imageView2.setFitHeight(25);
             imageView2.setFitWidth(30);
             comment3.setGraphic(imageView2);
@@ -190,12 +190,12 @@ public class PreviousPostsController {
                 Image image = new Image(stream);
                 post4Image.setImage(image);
             }
-            ImageView imageView1 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\likeLogo.png");
+            ImageView imageView1 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\likeLogo.png");
             imageView1.setFitHeight(25);
             imageView1.setFitWidth(30);
             like4.setGraphic(imageView1);
             like4.setVisible(true);
-            ImageView imageView2= new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\commentLogo.png");
+            ImageView imageView2= new ImageView("C:\\Users\\ernika\\Desktop\\posts\\commentLogo.png");
             imageView2.setFitHeight(25);
             imageView2.setFitWidth(30);
             comment4.setGraphic(imageView2);

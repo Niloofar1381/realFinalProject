@@ -176,27 +176,27 @@ public class ChatPageController {
             Image image = new Image(stream);
             bg.setImage(image);
         }
-        ImageView imageView1 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\send.png");
+        ImageView imageView1 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\send.png");
         imageView1.setFitHeight(35);
         imageView1.setFitWidth(40);
         send.setGraphic(imageView1);
         //set emoji
-        ImageView imageView = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\emoji1.png");
+        ImageView imageView = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\emoji1.png");
         imageView.setFitHeight(20);
         imageView.setFitWidth(20);
         emoji1.setGraphic(imageView);
 
-        ImageView imageView2 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\emoji2.png");
+        ImageView imageView2 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\emoji2.png");
         imageView2.setFitHeight(20);
         imageView2.setFitWidth(20);
         emoji2.setGraphic(imageView2);
 
-        ImageView imageView3 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\emoji3.png");
+        ImageView imageView3 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\emoji3.png");
         imageView3.setFitHeight(20);
         imageView3.setFitWidth(20);
         emoji3.setGraphic(imageView3);
 
-        ImageView imageView4 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\emoji4.png");
+        ImageView imageView4 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\emoji4.png");
         imageView4.setFitHeight(20);
         imageView4.setFitWidth(20);
         emoji4.setGraphic(imageView4);
@@ -383,19 +383,19 @@ public class ChatPageController {
             Message message = Manager.messages.get(Manager.messages.size() - 1);
             if(isEmoji1)
             {
-                message.setEmojiAddress("C:\\Users\\APPLE\\Desktop\\posts\\emoji1.png");
+                message.setEmojiAddress("C:\\Users\\ernika\\Desktop\\posts\\emoji1.png");
             }
             if(isEmoji2)
             {
-                message.setEmojiAddress("C:\\Users\\APPLE\\Desktop\\posts\\emoji2.png");
+                message.setEmojiAddress("C:\\Users\\ernika\\Desktop\\posts\\emoji2.png");
             }
             if(isEmoji3)
             {
-                message.setEmojiAddress("C:\\Users\\APPLE\\Desktop\\posts\\emoji3.png");
+                message.setEmojiAddress("C:\\Users\\ernika\\Desktop\\posts\\emoji3.png");
             }
             if(isEmoji4)
             {
-                message.setEmojiAddress("C:\\Users\\APPLE\\Desktop\\posts\\emoji4.png");
+                message.setEmojiAddress("C:\\Users\\ernika\\Desktop\\posts\\emoji4.png");
             }
         }
         initialize();
@@ -611,7 +611,7 @@ public class ChatPageController {
     public void setEmoji1() throws FileNotFoundException, SQLException {
         SetArrayLists setArrayLists = new SetArrayLists();
         setArrayLists.setAllArrayLists();
-        InputStream stream = new FileInputStream("C:\\Users\\APPLE\\Desktop\\posts\\emoji1.png");
+        InputStream stream = new FileInputStream("C:\\Users\\ernika\\Desktop\\posts\\emoji1.png");
         Image image = new Image(stream);
         imageInTextArea.setImage(image);
         isEmoji1=true;
@@ -622,7 +622,7 @@ public class ChatPageController {
     public void setEmoji2() throws FileNotFoundException, SQLException {
         SetArrayLists setArrayLists = new SetArrayLists();
         setArrayLists.setAllArrayLists();
-        InputStream stream = new FileInputStream("C:\\Users\\APPLE\\Desktop\\posts\\emoji2.png");
+        InputStream stream = new FileInputStream("C:\\Users\\ernika\\Desktop\\posts\\emoji2.png");
         Image image = new Image(stream);
         imageInTextArea.setImage(image);
         isEmoji1=false;
@@ -633,7 +633,7 @@ public class ChatPageController {
     public void setEmoji3() throws FileNotFoundException, SQLException {
         SetArrayLists setArrayLists = new SetArrayLists();
         setArrayLists.setAllArrayLists();
-        InputStream stream = new FileInputStream("C:\\Users\\APPLE\\Desktop\\posts\\emoji3.png");
+        InputStream stream = new FileInputStream("C:\\Users\\ernika\\Desktop\\posts\\emoji3.png");
         Image image = new Image(stream);
         imageInTextArea.setImage(image);
         isEmoji1=false;
@@ -644,7 +644,7 @@ public class ChatPageController {
     public void setEmoji4() throws FileNotFoundException, SQLException {
         SetArrayLists setArrayLists = new SetArrayLists();
         setArrayLists.setAllArrayLists();
-        InputStream stream = new FileInputStream("C:\\Users\\APPLE\\Desktop\\posts\\emoji4.png");
+        InputStream stream = new FileInputStream("C:\\Users\\ernika\\Desktop\\posts\\emoji4.png");
         Image image = new Image(stream);
         imageInTextArea.setImage(image);
         isEmoji1=false;

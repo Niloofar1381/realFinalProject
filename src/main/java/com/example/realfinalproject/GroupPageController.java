@@ -124,22 +124,22 @@ public class GroupPageController {
         forward2.setVisible(false);
         delete1.setVisible(false);
         delete2.setVisible(false);
-        ImageView imageView = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\emoji1.png");
+        ImageView imageView = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\emoji1.png");
         imageView.setFitHeight(20);
         imageView.setFitWidth(20);
         imageEmoji1.setGraphic(imageView);
 
-        ImageView imageView2 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\emoji2.png");
+        ImageView imageView2 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\emoji2.png");
         imageView2.setFitHeight(20);
         imageView2.setFitWidth(20);
         imageEmoji2.setGraphic(imageView2);
 
-        ImageView imageView3 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\emoji3.png");
+        ImageView imageView3 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\emoji3.png");
         imageView3.setFitHeight(20);
         imageView3.setFitWidth(20);
         imageEmoji3.setGraphic(imageView3);
 
-        ImageView imageView4 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\emoji4.png");
+        ImageView imageView4 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\emoji4.png");
         imageView4.setFitHeight(20);
         imageView4.setFitWidth(20);
         imageEmoji4.setGraphic(imageView4);
@@ -178,7 +178,7 @@ public class GroupPageController {
         groupName.setText(group.getGroupName());
         groupId.setText(group.getGroupId());
         memberNumbers.setText(Integer.toString(group.getUsers().size() + 1));
-        ImageView imageView1 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\send.png");
+        ImageView imageView1 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\send.png");
         imageView1.setFitHeight(33);
         imageView1.setFitWidth(40);
         send.setGraphic(imageView1);
@@ -307,19 +307,19 @@ public class GroupPageController {
             {
                 GroupMessage groupMessage=Manager.groupMessages.get(Manager.groupMessages.size()-1);
                 if(isEmoji1) {
-                    groupMessage.setEmojiAddress("C:\\Users\\APPLE\\Desktop\\posts\\emoji1.png");
+                    groupMessage.setEmojiAddress("C:\\Users\\ernika\\Desktop\\posts\\emoji1.png");
                 }
                 if(isEmoji2)
                 {
-                    groupMessage.setEmojiAddress("C:\\Users\\APPLE\\Desktop\\posts\\emoji2.png");
+                    groupMessage.setEmojiAddress("C:\\Users\\ernika\\Desktop\\posts\\emoji2.png");
                 }
                 if(isEmoji3)
                 {
-                    groupMessage.setEmojiAddress("C:\\Users\\APPLE\\Desktop\\posts\\emoji3.png");
+                    groupMessage.setEmojiAddress("C:\\Users\\ernika\\Desktop\\posts\\emoji3.png");
                 }
                 if(isEmoji4)
                 {
-                    groupMessage.setEmojiAddress("C:\\Users\\APPLE\\Desktop\\posts\\emoji4.png");
+                    groupMessage.setEmojiAddress("C:\\Users\\ernika\\Desktop\\posts\\emoji4.png");
                 }
             }
             fillText.clear();
@@ -472,7 +472,7 @@ public class GroupPageController {
         initialize();
     }
     public void setImageEmoji1() throws FileNotFoundException {
-        InputStream stream = new FileInputStream("C:\\Users\\APPLE\\Desktop\\posts\\emoji1.png");
+        InputStream stream = new FileInputStream("C:\\Users\\ernika\\Desktop\\posts\\emoji1.png");
         Image image = new Image(stream);
         imageInTextArea.setImage(image);
         isEmoji1=true;
@@ -481,7 +481,7 @@ public class GroupPageController {
         isEmoji4=false;
     }
     public void setImageEmoji2() throws FileNotFoundException {
-        InputStream stream = new FileInputStream("C:\\Users\\APPLE\\Desktop\\posts\\emoji2.png");
+        InputStream stream = new FileInputStream("C:\\Users\\ernika\\Desktop\\posts\\emoji2.png");
         Image image = new Image(stream);
         imageInTextArea.setImage(image);
         isEmoji1=false;
@@ -490,7 +490,7 @@ public class GroupPageController {
         isEmoji4=false;
     }
     public void setImageEmoji3() throws FileNotFoundException {
-        InputStream stream = new FileInputStream("C:\\Users\\APPLE\\Desktop\\posts\\emoji3.png");
+        InputStream stream = new FileInputStream("C:\\Users\\ernika\\Desktop\\posts\\emoji3.png");
         Image image = new Image(stream);
         imageInTextArea.setImage(image);
         isEmoji1=false;
@@ -499,7 +499,7 @@ public class GroupPageController {
         isEmoji4=false;
     }
     public void setImageEmoji4() throws FileNotFoundException {
-        InputStream stream = new FileInputStream("C:\\Users\\APPLE\\Desktop\\posts\\emoji4.png");
+        InputStream stream = new FileInputStream("C:\\Users\\ernika\\Desktop\\posts\\emoji4.png");
         Image image = new Image(stream);
         imageInTextArea.setImage(image);
         isEmoji1=false;

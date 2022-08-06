@@ -128,6 +128,7 @@ public class MainPageController {
         stage.setScene(scene);
         stage.show();
     }
+    //pain
     public void showRecentPosts() throws FileNotFoundException, SQLException {
         SetArrayLists setArrayLists = new SetArrayLists();
         setArrayLists.setAllArrayLists();
@@ -141,12 +142,12 @@ public class MainPageController {
                 Image image = new Image(stream);
                 post1Image.setImage(image);
             }
-            ImageView imageView1 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\likeLogo.png");
+            ImageView imageView1 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\likeLogo.png");
             imageView1.setFitHeight(25);
             imageView1.setFitWidth(30);
             like1.setGraphic(imageView1);
             like1.setVisible(true);
-            ImageView imageView2 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\commentLogo.png");
+            ImageView imageView2 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\commentLogo.png");
             imageView2.setFitHeight(25);
             imageView2.setFitWidth(30);
             comment1.setGraphic(imageView2);
@@ -167,12 +168,12 @@ public class MainPageController {
                 Image image = new Image(stream);
                 post2Image.setImage(image);
             }
-            ImageView imageView1 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\likeLogo.png");
+            ImageView imageView1 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\likeLogo.png");
             imageView1.setFitHeight(25);
             imageView1.setFitWidth(30);
             like2.setGraphic(imageView1);
             like2.setVisible(true);
-            ImageView imageView2 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\commentLogo.png");
+            ImageView imageView2 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\commentLogo.png");
             imageView2.setFitHeight(25);
             imageView2.setFitWidth(30);
             comment2.setGraphic(imageView2);

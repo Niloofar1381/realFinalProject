@@ -132,13 +132,13 @@ public class commentPageController {
                 Image image = new Image(stream);
                 comment1Image.setImage(image);
             }
-            ImageView imageView1 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\likeLogo.png");
+            ImageView imageView1 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\likeLogo.png");
             imageView1.setFitHeight(25);
             imageView1.setFitWidth(30);
             like1.setGraphic(imageView1);
             like1.setVisible(true);
             id1.setText(manager.searchPostById(post.commentsId.get(post.commentsId.size()-1)).userId);
-            ImageView imageView2 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\commentLogo.png");
+            ImageView imageView2 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\commentLogo.png");
             imageView2.setFitHeight(25);
             imageView2.setFitWidth(30);
             comment1Button.setGraphic(imageView2);
@@ -153,13 +153,13 @@ public class commentPageController {
                 Image image = new Image(stream);
                 comment2Image.setImage(image);
             }
-            ImageView imageView1= new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\likeLogo.png");
+            ImageView imageView1= new ImageView("C:\\Users\\ernika\\Desktop\\posts\\likeLogo.png");
             imageView1.setFitHeight(25);
             imageView1.setFitWidth(30);
             like2.setGraphic(imageView1);
             like2.setVisible(true);
             id2.setText(manager.searchPostById(post.commentsId.get(post.commentsId.size()-2)).userId);
-            ImageView imageView2 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\commentLogo.png");
+            ImageView imageView2 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\commentLogo.png");
             imageView2.setFitHeight(25);
             imageView2.setFitWidth(30);
             comment2Button.setGraphic(imageView2);
@@ -174,12 +174,12 @@ public class commentPageController {
                 comment3Image.setImage(image);
             }
             id3.setText(manager.searchPostById(post.commentsId.get(post.commentsId.size()-3)).userId);
-            ImageView imageView1 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\likeLogo.png");
+            ImageView imageView1 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\likeLogo.png");
             imageView1.setFitHeight(25);
             imageView1.setFitWidth(30);
             like3.setGraphic(imageView1);
             like3.setVisible(true);
-            ImageView imageView2 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\commentLogo.png");
+            ImageView imageView2 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\commentLogo.png");
             imageView2.setFitHeight(25);
             imageView2.setFitWidth(30);
             comment3Button.setGraphic(imageView2);
@@ -194,13 +194,13 @@ public class commentPageController {
                 Image image = new Image(stream);
                 comment4Image.setImage(image);
             }
-            ImageView imageView1 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\likeLogo.png");
+            ImageView imageView1 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\likeLogo.png");
             imageView1.setFitHeight(25);
             imageView1.setFitWidth(30);
             like4.setGraphic(imageView1);
             like4.setVisible(true);
             id4.setText(manager.searchPostById(post.commentsId.get(post.commentsId.size()-4)).userId);
-            ImageView imageView2 = new ImageView("C:\\Users\\APPLE\\Desktop\\posts\\commentLogo.png");
+            ImageView imageView2 = new ImageView("C:\\Users\\ernika\\Desktop\\posts\\commentLogo.png");
             imageView2.setFitHeight(25);
             imageView2.setFitWidth(30);
             comment4Button.setGraphic(imageView2);

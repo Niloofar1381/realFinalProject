@@ -45,16 +45,16 @@ public class ThemePageController {
     {
         SetArrayLists setArrayLists = new SetArrayLists();
         setArrayLists.setAllArrayLists();
-        InputStream stream1 = new FileInputStream("C:\\Users\\APPLE\\Desktop\\background\\back1.jpg");
+        InputStream stream1 = new FileInputStream("C:\\Users\\ernika\\Desktop\\background\\back1.jpg");
         Image Image1 = new Image(stream1);
         back1.setImage(Image1);
-        InputStream stream2 = new FileInputStream("C:\\Users\\APPLE\\Desktop\\background\\back2.jpg");
+        InputStream stream2 = new FileInputStream("C:\\Users\\ernika\\Desktop\\background\\back2.jpg");
         Image Image2 = new Image(stream2);
         back2.setImage(Image2);
-        InputStream stream3 = new FileInputStream("C:\\Users\\APPLE\\Desktop\\background\\back3.jpg");
+        InputStream stream3 = new FileInputStream("C:\\Users\\ernika\\Desktop\\background\\back3.jpg");
         Image Image3 = new Image(stream3);
         back3.setImage(Image3);
-        InputStream stream4 = new FileInputStream("C:\\Users\\APPLE\\Desktop\\background\\back4.jpg");
+        InputStream stream4 = new FileInputStream("C:\\Users\\ernika\\Desktop\\background\\back4.jpg");
         Image Image4= new Image(stream4);
         back4.setImage(Image4);
     }
@@ -63,19 +63,19 @@ public class ThemePageController {
         SetArrayLists setArrayLists = new SetArrayLists();
         setArrayLists.setAllArrayLists();
         if (setBg1.isSelected()) {
-            str = "C:\\Users\\APPLE\\Desktop\\background\\back1.jpg";
+            str = "C:\\Users\\ernika\\Desktop\\background\\back1.jpg";
             manager.checkLogin().setBackGround(str);
         }
         if (setBg2.isSelected()) {
-            str ="C:\\Users\\APPLE\\Desktop\\background\\back2.jpg" ;
+            str ="C:\\Users\\ernika\\Desktop\\background\\back2.jpg" ;
             manager.checkLogin().setBackGround(str);
         }
         if (setBg3.isSelected()) {
-            str = "C:\\Users\\APPLE\\Desktop\\background\\back3.jpg";
+            str = "C:\\Users\\ernika\\Desktop\\background\\back3.jpg";
             manager.checkLogin().setBackGround(str);
         }
         if (setBg4.isSelected()) {
-            str = "C:\\Users\\APPLE\\Desktop\\background\\back4.jpg";
+            str = "C:\\Users\\ernika\\Desktop\\background\\back4.jpg";
             manager.checkLogin().setBackGround(str);
         }
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("mainPage.fxml")));
